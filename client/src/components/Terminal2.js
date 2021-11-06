@@ -30,7 +30,7 @@ class Terminal2 extends React.Component {
         color='green'
         backgroundColor='black'
         barColor='black'
-        width='100%'
+        // width='100%'
         style={{ fontWeight: 'bold', fontSize: '1em' }}
         commands={{
           'open-google': () => window.open('https://www.google.com/', '_blank'),

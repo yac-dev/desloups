@@ -19,9 +19,9 @@ export const executeCode = (request, response) => {
         command = 'python';
         extension = 'py';
         break;
-      case 'java':
-        command = 'javac';
-        extension = 'java';
+      case 'php':
+        command = 'php';
+        extension = 'php';
         break;
       case 'ruby':
         command = 'ruby';
@@ -35,7 +35,7 @@ export const executeCode = (request, response) => {
     let fileName = `${uuidv4()}.${extension}`;
 
     fs.writeFileSync(fileName, code); // 実際に、file systemにjs codeが書かれたfileを作る。
-    const language = spawn(command, [fileName]);
+    const language = spawn(command, [fileName]); // 実行
 
     language.stdout.on('data', (data) => {
       result = { type: 'success', data: data.toString() };
@@ -56,7 +56,3 @@ export const executeCode = (request, response) => {
     console.log('what ....');
   }
 };
-
-// export const executeCode = (request, response) => {
-
-// };

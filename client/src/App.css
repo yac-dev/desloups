@@ -6,11 +6,37 @@
 .container {
   height: 100vh !important;
 }
-
+/*
 .terminal {
   height: 100vh;
+} */
+
+/* .editor {
+  background-color: #252a33 !important;
+}  */
+
+/* .code-editor {
+  grid-column: 2/3;
 }
 
-.editor {
-  background-color: #252a33 !important;
+.terminal {
+  grid-column: 1/3;
+} */
+
+body {
+  margin: 0;
+  /* background-color: black; */
+}
+
+.huge {
+  position: absolute !important;
+  bottom: 50px !important;
+  right: 50px !important;
+}
+
+.navbar {
+  height: 40px;
+}
+
+.side {
 }

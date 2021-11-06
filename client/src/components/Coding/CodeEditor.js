@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Editor from '@monaco-editor/react';
 import axios from 'axios';
 
-import TerminalController from './Terminal';
-import Terminal2 from './Terminal2';
+import TerminalController from '../Terminal';
+import Terminal2 from '../Terminal2';
 
 const View = () => {
   const options = {
@@ -63,7 +63,7 @@ const View = () => {
         //   quickSuggestionsDelay: 100,
         // }}
         options={options}
-        height='100vh'
+        height='70%'
         // width='50%'
         defaultLanguage='javascript'
         defaultValue={code}
