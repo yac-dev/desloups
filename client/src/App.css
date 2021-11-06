@@ -28,15 +28,12 @@ body {
   /* background-color: black; */
 }
 
-.huge {
+/* .huge {
   position: absolute !important;
   bottom: 50px !important;
   right: 50px !important;
-}
+} */
 
 .navbar {
-  height: 40px;
-}
-
-.side {
+  height: 5vh;
 }

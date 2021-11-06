@@ -7,6 +7,7 @@ import Terminal2 from './components/Terminal2';
 // import TerminalController from './components/Terminal';
 
 import Navbar from './components/Navbar';
+import SideSpace from './components/Side/SideSpace';
 import CodeEditor from './components/CodeEditorNew';
 import RunButton from './components/Coding/RunButton';
 import MyTerminal from './components/Coding/TerminalNew';
@@ -38,13 +39,14 @@ const App = () => {
     //   <TerminalController />
     <div>
       <Navbar />
-      <div className='coding'>
-        <CodeEditor code={code} setCode={setCode} />
-        {/* <MyTerminal /> */}
+      {/* <div className='coding'> */}
+      <SideSpace />
+      {/* <CodeEditor code={code} setCode={setCode} /> */}
+      {/* <MyTerminal /> */}
 
-        {/* <RunButton onRunClick={onRunClick} /> */}
-      </div>
+      {/* <RunButton onRunClick={onRunClick} /> */}
     </div>
+    // </div>
   );
 };
 
