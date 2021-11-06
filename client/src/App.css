@@ -1,10 +1,19 @@
-.coding {
+/* .coding {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .container {
-  height: 100vh !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid1 {
+  grid-column: 1/2;
+}
+
+.grid2 {
+  grid-column: 2/5;
 }
 /*
 .terminal {

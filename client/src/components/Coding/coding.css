@@ -1,0 +1,16 @@
+.coding-space {
+  display: grid;
+  height: 95vh;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.code-editor {
+  grid-row: 1/8;
+  /* background-color: green; */
+}
+
+.terminal-space {
+  grid-row: 8/11;
+  background-color: black;
+  color: green;
+}

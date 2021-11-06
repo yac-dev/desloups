@@ -8,6 +8,8 @@ import Terminal2 from './components/Terminal2';
 
 import Navbar from './components/Navbar';
 import SideSpace from './components/Side/SideSpace';
+import CodingSpace from './components/Coding/CodingSpace';
+
 import CodeEditor from './components/CodeEditorNew';
 import RunButton from './components/Coding/RunButton';
 import MyTerminal from './components/Coding/TerminalNew';
@@ -37,10 +39,15 @@ const App = () => {
     //     // result={result}
     //   /> */}
     //   <TerminalController />
-    <div>
+    <div className='container'>
       <Navbar />
       {/* <div className='coding'> */}
-      <SideSpace />
+      <div className='grid1'>
+        <SideSpace />
+      </div>
+      <div className='grid2'>
+        <CodingSpace />
+      </div>
       {/* <CodeEditor code={code} setCode={setCode} /> */}
       {/* <MyTerminal /> */}
 
